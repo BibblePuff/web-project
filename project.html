@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./project.css">
+    <script type="text/javascript" src="./project.js"></script>
+
+
+    <title>როგორ ხასიათზე ხარ?</title>
+   
+</head>
+
+<body>
+    <div class="aboutUs">
+    <button onclick="openRectangle()">საიტის შესახებ</button>
+
+<div id="rectangleContainer" style="display: none;">
+    <h3>მოგესალმებით!</h3>
+    <p> ეს პლათფორმა დაგეხმარებათ თქვენს ემოციებთან გამკლავებასა და ჰარმონიის დამყარებაში. ჩვენი მიზანია შემოგთავაზოთ მარტივი და ეფექტური საშუალება , რომ გაუგოთ თქვენს თავს და აიმაღლოთ ემოციური ინტელექტი.</p>
+    <ul>
+        <li>მარტივად აირჩიე ხასიათი ემოციების ჩამონათვალიდან.</li>
+        <li>წაიკითხე ცნობილი გამონათქვამები , რომლებიც დაგეხმარება შენი ემოციების უკეთ აღქმაში.</li>
+        <li>გაუზიარე შენი გრძნობები საზოგადოებას.</li>
+    </ul>
+    <button onclick="closeRectangle()">დახურვა</button>
+</div>
+    </div>
+
+    <div class="main-container">
+        <div>
+            <h1>როგორ ხასიათზე ხარ?</h1>
+            <label for="moodSelector">აირჩიე ხასიათი:</label>
+            <select id="moodSelector">
+                <option value="happy">😄 ბედნიერი</option>
+                <option value="sad">😢 მოწყენილი</option>
+                <option value="angry">😡 გაბრაზებული</option>
+                <option value="inLove">🥰 შეყვარებული</option>
+                <option value="disappointed">🙁 იმედგაცრუებული</option>
+            </select>
+            <button onclick="trackMood()">არჩევა</button>
+        </div>
+
+        <div id="quoteDisplay"></div>
+
+        <div>
+            <textarea id="feelingInput" rows="3" cols="8" placeholder="გაუზიარე ემოციები სხვებს..."></textarea>
+            <button onclick="saveFeeling()">შენახვა</button>
+        </div>
+
+        <h2>კომენტარები :</h2>
+        <div id="feelingsList"></div>
+    </div>
+</body>
+
+</html>
